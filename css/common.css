@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-yellow);
+  font-family: "DM Sans", sans-serif;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+h1, h3, button {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn i {
+  font-size: 18px;
+}
+.btn:hover, .btn:focus {
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.25);
+}
+.btn.white {
+  border-color: var(--white);
+  color: var(--white);
+}
+.btn.white:hover, .btn.white:focus {
+  background: var(--white);
+  color: var(--text-color);
+}
+
+.section-header {
+  position: relative;
+}
+.section-header::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 40px;
+  height: 6px;
+  background-color: var(--primary-color);
+}
+
+.highlight-text {
+  color: var(--text-colored-light);
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.highlight-text:hover {
+  color: var(--secondary-color);
+}
+
+.form-element {
+  margin-bottom: 16px;
+}
+.form-element label {
+  display: block;
+}
+.form-element label b {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.form-element label input, .form-element label textarea {
+  display: block;
+  padding: 12px 16px;
+  width: 100%;
+  margin-top: 2px;
+  font-family: "DM Sans", sans-serif;
+  background-color: #fff;
+  border: 2px solid var(--grey);
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+.form-element label input:focus, .form-element label textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+.form-element label textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+@media screen and (max-width: 1980px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .section-header::before {
+    width: 32px;
+    height: 5px;
+    bottom: -2px;
+    left: 50%;
+    translate: -50% 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .btn.full-width {
+    width: 100%;
+    justify-content: center;
+    max-width: 300px;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */

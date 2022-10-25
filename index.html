@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/modal.css">
+  <link rel="stylesheet" href="./css/materialdesignicons.css">
+</head>
+<body>
+  <!-- header -->
+  <header id="header-element">
+    <div class="container">
+      <nav>
+        <div id="logo-container">
+          <img src="./assets/images/logo.png" alt="Shreyanshu Dudhane's Logo">
+        </div>
+        <div>
+          <span id="ham-menu" onclick="toggleMenu()"><i class="mdi mdi-menu"></i></span>
+          <div id="nav-links-container">
+            <a class="nav-link" id="a-link" onclick="goTo('a')">About</a>
+            <a class="nav-link" id="p-link" onclick="goTo('p')">Portfolio</a>
+            <a class="nav-link" id="c-link" onclick="goTo('c')">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="mobile-nav-links-container">
+    <a class="mobile-nav-link" id="a-link" onclick="goTo('a'); toggleMenu()">About</a>
+    <a class="mobile-nav-link" id="p-link" onclick="goTo('p'); toggleMenu()">Portfolio</a>
+    <a class="mobile-nav-link" id="c-link" onclick="goTo('c'); toggleMenu()">Contact</a>
+    </div>
+  </header>
+  <section id="header" class="animate">
+    <!-- hero -->
+    <div id="hero">
+      <div id="chips-container">
+        <div class="chip purple"></div>
+        <div class="chip blue"></div>
+        <div class="chip green"></div>
+      </div>
+      <div id="hero-main-container">
+        <div>
+          <img src="./assets/images/me.png" id="cartoon-image" alt="My Cartoon Potrait">
+        </div>
+        <div id="info-container">
+          <h1>Hello, I'm Shreyanshu Dudhane</h1>
+          <h3>A <span class="web-position">Front-end Developer</span> & <span class="web-position">Web Enthusiast</span></h3>
+          <button class="btn full-width" onclick="goTo('a')">EXPLORE<i class="mdi mdi-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="main">
+    <div class="container">
+      <!-- about -->
+      <div id="about-container">
+        <div id="about-text-container" class="animate">
+          <h3 class="section-header">About Me</h3>
+          <p>I am a web developer currently focused on the front-end. I really like to think that websites and web-apps are my way of contributing to the people. Currently working as UI/UX developer at <a href="https://mkcl.org/" class="highlight-text" target="_blank" >MKCL</a>, India, I try my best to create something good for the users.</p>
+          <div class="hidden-about">
+            <p id="hidden-about-text"></p>
+          </div>
+          <span id="action-text" onclick="toggleAboutStatsText()"><span id="about-action-text">show more</span> <i id="about-action-icon" class="mdi mdi-chevron-down"></i></span>
+        </div>
+        <div id="about-stats-container" class="animate">
+          <div id="stats-container" class="stats-container">
+            <!-- JS -->
+            <!-- <span class="stat-name">JS</span>
+            <div class="stat-progress-bar">
+              <div class="stat-progress" style="--progress: 80%"></div>
+            </div>
+            <span class="stat-number">80%</span> -->
+          </div>
+        </div>
+      </div>
+      <!-- portfolio -->
+      <div id="portfolio-container">
+        <h3 class="section-header animate" id="pf-header">Portfolio</h3>
+        <div id="portfolio-grid">
+          <div class="portfolio-card animate" id="is">
+            <img src="./assets/images/is.jpg" alt="Insurance Solutions" loading="lazy">
+            <div class="portfolio-info-container">
+              <div>
+                <p class="info-text">Web platform empowering a policy agency to serve its customers online</p>
+                <p class="language-text">JQuery . Laravel . MySQL</p>
+              </div>
+              <button class="btn white" onclick="openModal(0)">SHOW MORE<i class="mdi mdi-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="portfolio-card animate" id="tms">
+            <img src="./assets/images/tms.png" alt="Trust Management System" loading="lazy">
+            <div class="portfolio-info-container">
+              <div>
+                <p class="info-text">Web-application helping a trust organization to connect with the needy</p>
+                <p class="language-text">JS . Laravel . MySQL</p>
+              </div>
+              <button class="btn white" onclick="openModal(1)">SHOW MORE<i class="mdi mdi-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="portfolio-card animate" id="avid">
+            <img src="./assets/images/avid.jpg" alt="Avid Games" loading="lazy">
+            <div class="portfolio-info-container">
+              <div>
+                <p class="info-text">Fun games website banishing people's boredom</p>
+                <p class="language-text">JS . Unity . PHP . MySQL</p>
+              </div>
+              <button class="btn white" onclick="openModal(2)">SHOW MORE<i class="mdi mdi-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hire -->
+      <div id="hire">
+        <div id="hire-card" class="animate">
+          <div id="hire-side">
+            <h3 class="section-header">Hire Me</h3>
+            <p>I have a good feeling about web-development and I am currently looking for a front-end role where I can learn and contribute more.</p>
+            <div id="hire-actions-container">
+              <button class="btn"><i class="mdi mdi-download"></i>DOWNLOAD RESUME</button>
+              <span>
+                <a href="" class="hire-link"><i class="mdi mdi-linkedin"></i></a>
+                <a href="" class="hire-link"><i class="mdi mdi-github"></i></a>
+              </span>
+            </div>
+          </div>
+          <div id="animation-side" onmouseover="animateWeb()" onmouseout="stopAnimateWeb()">
+            <div id="web-dev">
+              <span>Web <br> Development</span>
+            </div>
+            <div id="me">
+              <span>me</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer-section">
+    <!-- contact -->
+    <div id="contact-container">
+      <div class="container">
+        <h3 class="section-header animate" id="contact-header">Contact Me</h3>
+        <p class="contact-text animate" id="contact-text">Have any questions or just want to talk?</p>
+        <form id="contact-form" class="animate" onsubmit="submitMessage()">
+          <div class="form-element">
+            <label>
+              <b>Your Name</b>
+              <input type="text" name="contactName" id="contactName" placeholder="Enter your name...">
+            </label>
+          </div>
+          <div class="form-element">
+            <label>
+              <b>Your Email</b>
+              <input type="email" name="contactEmail" id="contactEmail" required placeholder="Enter your email address...">
+            </label>
+          </div>
+          <div class="form-element">
+            <label>
+              <b>Your Message</b>
+              <textarea name="contactMessage" id="contactMessage" required placeholder="Enter a message for me..."></textarea>
+            </label>
+          </div>
+          <button class="btn full-width" id="submit-btn">SUBMIT MESSAGE <i class="mdi mdi-send"></i></button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer" class="animate">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shreyanshu-dudhane/" class="social-link" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a>
+          <a href="https://github.com/DudhaneShrey86" class="social-link" title="Github"><i class="mdi mdi-github"></i></a>
+          <a href="https://t.me/DudhaneShrey86" class="social-link"><i class="mdi mdi-send-circle" title="Telegram"></i></a>
+          <a href="https://www.instagram.com/dudhaneshrey86/" class="social-link"><i class="mdi mdi-instagram" title="Instagram"></i></a>
+        </div>
+        <p class="exit-link">Learn . Evolve . Contribute</p>
+        <p class="copyright">Shreyanshu Dudhane &copy; 2022</p>
+      </div>
+    </div>
+  </section>
+  <!-- modal -->
+  <div id="modal">
+    <div id="modal-backdrop" onclick="closeModal()">
+  
+    </div>
+    <div id="modal-body">
+      <div id="modal-gallery-container">
+        <div id="modal-gallery">
+          <div class="image-container">
+            <img src="./assets/images/is/is.png" alt="">
+          </div>
+        </div>
+        <span class="gallery-controls left" onclick="changeStep(-1)"><i class="mdi mdi-chevron-left"></i></span>
+        <span class="gallery-controls right" onclick="changeStep(1)"><i class="mdi mdi-chevron-right"></i></span>
+      </div>
+      <div id="modal-content-container">
+        <div>
+          <div id="modal-header-container">
+            <h3 id="modal-header">Insurance Solutions</h3>
+            <i class="mdi mdi-close" onclick="closeModal()"></i>
+          </div>
+          <p id="modal-text">A complete web platform for "Insurance Solutions" policy agency and its customers to digitize their business.</p>
+        </div>
+        <div id="modal-action">
+          <a href="https://insurancesolns.com" class="btn">VISIT SITE<i class="mdi mdi-open-in-new"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/anime.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

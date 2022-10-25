@@ -1,0 +1,57 @@
+// font faces here
+
+// poppins
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+}
+
+// dm sans
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/DMSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/DMSans-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/DMSans-Bold.ttf');
+  font-weight: 700;
+}
+
+
+// material design icons
+@font-face {
+  font-family: "Material Design Icons";
+  src: url('../assets/fonts/MaterialDesignIcons/materialdesignicons-webfont.woff2?v=7.0.96') format("woff2");
+  // src: url("../fonts/materialdesignicons-webfont.eot?v=7.0.96");
+  // src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=7.0.96") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=7.0.96") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=7.0.96") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=7.0.96") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mdi:before,
+.mdi-set {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #5800FF;
+  --secondary-color: #6F38C5;
+  --text-color: #3D3C42;
+  --text-muted: #ACACAC;
+  --text-colored-light: #87A2FB;
+  --background-yellow: #FEFBF6;
+  --grey: #D9D9D9;
+  --white: #fff;
+  --gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/*# sourceMappingURL=variables.css.map */

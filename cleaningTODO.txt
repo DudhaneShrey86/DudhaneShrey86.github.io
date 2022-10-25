@@ -1,0 +1,3 @@
+remove fonts included but not used
+remove mdi icons not used
+check for other purging
