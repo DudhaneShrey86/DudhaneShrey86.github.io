@@ -380,12 +380,12 @@ function animateFooter() {
     translateY: [30, 0]
   })
   tl.add({
-    targets: '#footer .exit-link',
+    targets: '#footer #exit-link',
     opacity: [0, 1],
     translateY: [30, 0]
   }, 800)
   tl.add({
-    targets: '#footer .copyright',
+    targets: '#footer #copyright',
     opacity: [0, 1],
     translateY: [30, 0]
   }, 1200)
@@ -459,6 +459,7 @@ function toggleMenu () {
 
 function openModal(i) {
   currentImageIndex = 0
+  setModalContent(i)
   modal.classList.add('active')
   // modal.style.display = 'flex'
   // setModalContent(i)

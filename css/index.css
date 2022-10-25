@@ -377,15 +377,15 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
   border-color: var(--white);
   color: var(--white);
 }
-#footer .exit-link {
+#footer #exit-link {
   margin-top: 24px;
 }
-#footer .copyright {
+#footer #copyright {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 0;
 }
-#footer .social-link, #footer .exit-link, #footer .copyright {
+#footer .social-link, #footer #exit-link, #footer #copyright {
   opacity: 0;
 }
 

@@ -388,15 +388,15 @@ nav {
       }
     }
   }
-  .exit-link {
+  #exit-link {
     margin-top: 24px;
   }
-  .copyright {
+  #copyright {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     margin: 0;
   }
-  .social-link, .exit-link, .copyright {
+  .social-link, #exit-link, #copyright {
     opacity: 0;
   }
 }
