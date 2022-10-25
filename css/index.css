@@ -521,6 +521,9 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
   #about-container #about-stats-container .stats-container {
     grid-template-columns: auto 180px auto;
   }
+  #about-container #about-stats-container .stats-container .stat-name {
+    margin-right: 10px;
+  }
   #hire-card {
     padding: 40px 24px 24px;
   }

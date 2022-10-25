@@ -459,14 +459,15 @@ function toggleMenu () {
 
 function openModal(i) {
   currentImageIndex = 0
-  modal.style.display = 'flex'
-  setModalContent(i)
-  anime({
-    targets: modal,
-    opacity: [0, 1],
-    duration: 500,
-    easing: 'easeOutCubic'
-  })
+  modal.classList.add('active')
+  // modal.style.display = 'flex'
+  // setModalContent(i)
+  // anime({
+  //   targets: modal,
+  //   opacity: [0, 1],
+  //   duration: 500,
+  //   easing: 'easeOutCubic'
+  // })
 }
 
 function setModalContent(i) {
@@ -487,13 +488,14 @@ function setModalContent(i) {
 }
 
 function closeModal() {
-  anime({
-    targets: modal,
-    opacity: [1, 0],
-    duration: 300,
-    easing: 'easeOutCubic',
-  })
-  setTimeout(() => {modal.style.display = 'none'}, 300)
+  modal.classList.remove('active')
+  // anime({
+  //   targets: modal,
+  //   opacity: [1, 0],
+  //   duration: 300,
+  //   easing: 'easeOutCubic',
+  // })
+  // setTimeout(() => {modal.style.display = 'none'}, 300)
 }
 
 function changeStep(index) {

@@ -9,6 +9,9 @@
   justify-content: center;
   z-index: 10;
   display: none;
+  &.active {
+    display: flex;
+  }
   #modal-backdrop {
     position: absolute;
     width: 100%;

@@ -28,6 +28,10 @@ h3 {
   margin: 0 auto;
 }
 
+a.btn {
+  text-decoration: none;
+}
+
 .btn {
   display: flex;
   align-items: center;
