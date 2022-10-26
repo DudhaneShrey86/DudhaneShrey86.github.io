@@ -10,3 +10,39 @@
   --white: #fff;
   --gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
+
+
+// font faces here
+// poppins
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf');
+  font-weight: 600;
+}
+
+// dm sans
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/DMSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/DMSans-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/DMSans-Bold.ttf');
+  font-weight: 700;
+}
