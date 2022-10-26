@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website defining the person I am.">
+  <meta name="keywords" content="Shreyanshu Dudhane, Portfolio, Website">
+  <meta name="author" content="Shreyanshu Dudhane">
   <title>Portfolio</title>
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/fonts.css">
@@ -13,12 +16,11 @@
   <link rel="stylesheet" href="./css/materialdesignicons.css">
 </head>
 <body>
-  <!-- header -->
   <header id="header-element">
     <div class="container">
       <nav>
         <div id="logo-container">
-          <img src="./assets/images/logo.png" alt="Shreyanshu Dudhane's Logo">
+          <img src="./assets/images/logo.webp" alt="Shreyanshu Dudhane's Logo">
         </div>
         <div>
           <span id="ham-menu" onclick="toggleMenu()"><i class="mdi mdi-menu"></i></span>
@@ -37,7 +39,6 @@
     </div>
   </header>
   <section id="header" class="animate">
-    <!-- hero -->
     <div id="hero">
       <div id="chips-container">
         <div class="chip purple"></div>
@@ -46,7 +47,7 @@
       </div>
       <div id="hero-main-container">
         <div>
-          <img src="./assets/images/me.png" id="cartoon-image" alt="My Cartoon Potrait">
+          <img src="./assets/images/me.webp" id="cartoon-image" alt="My Cartoon Potrait">
         </div>
         <div id="info-container">
           <h1>Hello, I'm Shreyanshu Dudhane</h1>
@@ -58,7 +59,6 @@
   </section>
   <section id="main">
     <div class="container">
-      <!-- about -->
       <div id="about-container">
         <div id="about-text-container" class="animate">
           <h3 class="section-header">About Me</h3>
@@ -79,12 +79,11 @@
           </div>
         </div>
       </div>
-      <!-- portfolio -->
       <div id="portfolio-container">
         <h3 class="section-header animate" id="pf-header">Portfolio</h3>
         <div id="portfolio-grid">
           <div class="portfolio-card animate" id="is">
-            <img src="./assets/images/is.jpg" alt="Insurance Solutions" loading="lazy">
+            <img src="./assets/images/is.webp" alt="Insurance Solutions" loading="lazy">
             <div class="portfolio-info-container">
               <div>
                 <p class="info-text">Web platform empowering a policy agency to serve its customers online</p>
@@ -94,7 +93,7 @@
             </div>
           </div>
           <div class="portfolio-card animate" id="tms">
-            <img src="./assets/images/tms.png" alt="Trust Management System" loading="lazy">
+            <img src="./assets/images/tms.webp" alt="Trust Management System" loading="lazy">
             <div class="portfolio-info-container">
               <div>
                 <p class="info-text">Web-application helping a trust organization to connect with the needy</p>
@@ -104,7 +103,7 @@
             </div>
           </div>
           <div class="portfolio-card animate" id="avid">
-            <img src="./assets/images/avid.jpg" alt="Avid Games" loading="lazy">
+            <img src="./assets/images/avid.webp" alt="Avid Games" loading="lazy">
             <div class="portfolio-info-container">
               <div>
                 <p class="info-text">Fun games website banishing people's boredom</p>
@@ -115,17 +114,16 @@
           </div>
         </div>
       </div>
-      <!-- hire -->
       <div id="hire">
         <div id="hire-card" class="animate">
           <div id="hire-side">
             <h3 class="section-header">Hire Me</h3>
             <p>I have a good feeling about web-development and I am currently looking for a front-end role where I can learn and contribute more.</p>
             <div id="hire-actions-container">
-              <a href="" class="btn"><i class="mdi mdi-download"></i>DOWNLOAD RESUME</a>
+              <a href="./assets/resume.pdf" target="_blank" class="btn"><i class="mdi mdi-download"></i>DOWNLOAD RESUME</a>
               <span>
-                <a href="" class="hire-link"><i class="mdi mdi-linkedin"></i></a>
-                <a href="" class="hire-link"><i class="mdi mdi-github"></i></a>
+                <a href="https://www.linkedin.com/in/shreyanshu-dudhane/" class="hire-link" title="LinkedIn"><i class="mdi mdi-linkedin"></i></a>
+                <a href="https://github.com/DudhaneShrey86" class="hire-link" title="Github"><i class="mdi mdi-github"></i></a>
               </span>
             </div>
           </div>
@@ -142,7 +140,6 @@
     </div>
   </section>
   <section id="footer-section">
-    <!-- contact -->
     <div id="contact-container">
       <div class="container">
         <h3 class="section-header animate" id="contact-header">Contact Me</h3>
@@ -166,11 +163,10 @@
               <textarea name="contactMessage" id="contactMessage" required placeholder="Enter a message for me..."></textarea>
             </label>
           </div>
-          <button class="btn full-width" id="submit-btn">SUBMIT MESSAGE <i class="mdi mdi-send"></i></button>
+          <button class="btn full-width" id="submit-btn"><span>SUBMIT MESSAGE</span> <i class="mdi mdi-send"></i></button>
         </form>
       </div>
     </div>
-    <!-- footer -->
     <div id="footer" class="animate">
       <div class="container">
         <div class="social-links">
@@ -179,12 +175,12 @@
           <a href="https://t.me/DudhaneShrey86" class="social-link"><i class="mdi mdi-send-circle" title="Telegram"></i></a>
           <a href="https://www.instagram.com/dudhaneshrey86/" class="social-link"><i class="mdi mdi-instagram" title="Instagram"></i></a>
         </div>
-        <p class="exit-link">Learn . Evolve . Contribute</p>
-        <p class="copyright">Shreyanshu Dudhane &copy; 2022</p>
+        <p id="exit-link">Learn . Evolve . Contribute</p>
+        <p id="copyright">Shreyanshu Dudhane &copy; 2022</p>
       </div>
+      <span id="to-top" onclick="goToTop()"><i class="mdi mdi-arrow-up"></i></span>
     </div>
   </section>
-  <!-- modal -->
   <div id="modal">
     <div id="modal-backdrop" onclick="closeModal()">
   
@@ -193,7 +189,7 @@
       <div id="modal-gallery-container">
         <div id="modal-gallery">
           <div class="image-container">
-            <img src="./assets/images/is/is.png" alt="">
+            <img src="./assets/images/is/is.webp" alt="">
           </div>
         </div>
         <span class="gallery-controls left" onclick="changeStep(-1)"><i class="mdi mdi-chevron-left"></i></span>
@@ -214,6 +210,6 @@
     </div>
   </div>
   <script src="./js/anime.min.js"></script>
-  <script src="./js/index.js"></script>
+  <script src="./js/index.js" defer></script>
 </body>
 </html>

@@ -79,9 +79,9 @@ let projectsArray = [
     text: 'A complete web platform for "Insurance Solutions" policy agency and its customers to digitize their business.',
     link: 'https://insurancesolns.com/',
     images: [
-      './assets/images/is/is.png',
-      './assets/images/is/explore.png',
-      './assets/images/is/policies.png'
+      './assets/images/is/is.webp',
+      './assets/images/is/explore.webp',
+      './assets/images/is/policies.webp'
     ]
   },
   {
@@ -89,7 +89,7 @@ let projectsArray = [
     text: 'A web-application to help a trust organization interact with the needy and manage daily data.',
     link: '',
     images: [
-      './assets/images/tms/tms.png',
+      './assets/images/tms/tms.webp',
     ]
   },
   {
@@ -97,7 +97,7 @@ let projectsArray = [
     text: 'A little games website which attempted to make the "lockdown" period a little less boring.',
     link: 'https://avidgames.site/',
     images: [
-      './assets/images/avid/avid.png',
+      './assets/images/avid/avid.webp',
     ]
   },
 ]
@@ -380,12 +380,12 @@ function animateFooter() {
     translateY: [30, 0]
   })
   tl.add({
-    targets: '#footer #exit-link',
+    targets: '#exit-link',
     opacity: [0, 1],
     translateY: [30, 0]
   }, 800)
   tl.add({
-    targets: '#footer #copyright',
+    targets: '#copyright',
     opacity: [0, 1],
     translateY: [30, 0]
   }, 1200)
@@ -483,7 +483,7 @@ function setModalContent(i) {
   let imageText = ``
   currentProject.images.forEach((image, index) => {
     let c = (index < currentImageIndex) ? 'left' : (index > currentImageIndex) ? 'right' : ''
-    imageText += `<div class="image-container `+c+`"><img src="`+image+`" alt="`+currentProject.name+`"></div>`
+    imageText += `<a href="`+image+`" target="_blank"><div class="image-container `+c+`"><img src="`+image+`" loading="lazy" alt="`+currentProject.name+`"></div></a>`
   })
   modalGallery.innerHTML = imageText
 }
@@ -535,5 +535,19 @@ function stopAnimateWeb() {
 
 function submitMessage() {
   event.preventDefault()
-  console.log('here')
+  let btn = document.getElementById('submit-btn')
+  btn.disabled = true
+  btn.children[0].innerHTML = 'Sending Message'
+  btn.children[1].classList = 'mdi mdi-timer-sand-full rotate'
+  setTimeout(() => {
+    btn.children[0].innerHTML = 'Message Sent'
+  btn.children[1].classList = 'mdi mdi-check'
+  }, 2000)
+}
+
+function goToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 }

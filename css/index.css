@@ -25,7 +25,7 @@ nav {
   justify-content: space-between;
 }
 nav #logo-container img {
-  max-width: 80px;
+  width: 80px;
   display: block;
 }
 nav #ham-menu {
@@ -349,9 +349,20 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
 #contact-container #submit-btn {
   margin: 40px auto 0;
 }
+#contact-container #submit-btn:disabled, #contact-container #submit-btn:disabled:hover {
+  cursor: default;
+  color: var(--white);
+  background: var(--grey);
+  border-color: var(--grey);
+  box-shadow: none;
+}
+#contact-container #submit-btn .mdi.rotate {
+  animation: loading 1s linear infinite;
+}
 
 #footer {
-  padding: 40px 0;
+  position: relative;
+  padding: 60px 0 40px 0;
   text-align: center;
   color: #D9C4FF;
   background-image: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
@@ -371,7 +382,7 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
   border: 2px solid #D9C4FF;
   border-radius: 8px;
   padding: 4px 8px;
-  transition: border-color 0.3s ease, color 0.3s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 #footer .social-links .social-link:hover, #footer .social-links .social-link:focus {
   border-color: var(--white);
@@ -387,6 +398,25 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
 }
 #footer .social-link, #footer #exit-link, #footer #copyright {
   opacity: 0;
+}
+#footer #to-top {
+  position: absolute;
+  right: 24px;
+  bottom: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #D9C4FF;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#footer #to-top:hover {
+  background-color: var(--white);
+  border-color: var(--white);
+  color: var(--primary-color);
 }
 
 @keyframes fly-chips {
@@ -420,6 +450,14 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
     border-radius: 60px;
     width: 60px;
     height: 60px;
+  }
+}
+@keyframes loading {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
   }
 }
 @media screen and (max-width: 768px) {
@@ -483,7 +521,7 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
     display: none;
   }
   nav #logo-container img {
-    max-width: 60px;
+    width: 60px;
   }
   header #mobile-nav-links-container {
     display: block;
@@ -536,6 +574,10 @@ nav #nav-links-container .nav-link.active, nav #nav-links-container .nav-link:ho
     bottom: -20px;
     left: 50%;
     translate: -50% 0;
+  }
+  #footer #to-top {
+    position: static;
+    margin-top: 24px;
   }
 }
 
