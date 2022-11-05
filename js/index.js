@@ -10,6 +10,8 @@ let modalGallery = document.getElementById('modal-gallery')
 let modalHeader = document.getElementById('modal-header')
 let modalText = document.getElementById('modal-text')
 let modalAction = document.getElementById('modal-action')
+let leftControl = document.getElementById('left-control')
+let rightControl = document.getElementById('right-control')
 
 let meBox = document.getElementById('me')
 
@@ -98,6 +100,9 @@ let projectsArray = [
     link: 'https://avidgames.site/',
     images: [
       './assets/images/avid/avid.webp',
+      './assets/images/avid/homepage.webp',
+      './assets/images/avid/bird.webp',
+      './assets/images/avid/puzzle.webp',
     ]
   },
 ]
@@ -459,6 +464,7 @@ function toggleMenu () {
 
 function openModal(i) {
   currentImageIndex = 0
+  leftControl.classList.add('hidden')
   setModalContent(i)
   modal.classList.add('active')
   // modal.style.display = 'flex'
@@ -514,6 +520,15 @@ function changeStep(index) {
       }
       images[i].className = classNames
     }
+  }
+  // set gallery controls according to current image index
+  if (currentImageIndex === 0) {
+    leftControl.classList.add('hidden')
+  } else if (currentImageIndex === (l - 1)) {
+    rightControl.classList.add('hidden')
+  } else {
+    leftControl.classList.remove('hidden')
+    rightControl.classList.remove('hidden')
   }
 }
 

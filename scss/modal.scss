@@ -55,6 +55,9 @@
       &:hover {
         background-color: rgba(0, 0, 0, 0.8);
       }
+      &.hidden {
+        display: none;
+      }
     }
     #modal-gallery {
       height: 100%;
@@ -71,6 +74,7 @@
         justify-content: center;
         opacity: 1;
         transition: all 0.3s ease;
+        cursor: zoom-in;
         img {
           display: block;
           max-height: 100%;
