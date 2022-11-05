@@ -92,6 +92,9 @@ let projectsArray = [
     link: '',
     images: [
       './assets/images/tms/tms.webp',
+      './assets/images/tms/applications.webp',
+      './assets/images/tms/receipt.webp',
+      './assets/images/tms/status.webp',
     ]
   },
   {
