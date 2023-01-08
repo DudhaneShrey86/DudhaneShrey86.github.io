@@ -33,7 +33,7 @@ let aboutTextIndex = -1
 let aboutTexts = [
   { 
     text: '',
-    label: 'show more',
+    label: 'show more (1/4)',
     skills: [
       { name: 'JS', value: 80 },
       { name: 'HTML', value: 90 },
@@ -45,7 +45,7 @@ let aboutTexts = [
   },
   {
     text: 'I am fascinated by the powers of web-development and I want to explore all the aspects of it.',
-    label: 'uh huh?',
+    label: 'uh huh? (2/4)',
     skills: [
       { name: 'PHP', value: 50 },
       { name: 'Laravel', value: 60 },
@@ -55,7 +55,7 @@ let aboutTexts = [
   },
   {
     text: `The idea of <b class="highlight-text" onclick="goTo('p')">creating things</b> for the people gets me excited!`,
-    label: 'anything else?',
+    label: 'anything else? (3/4)',
     skills: [
       { name: 'Creativity', value: 30 },
       { name: 'Logic', value: 60 },
@@ -64,7 +64,7 @@ let aboutTexts = [
   },
   {
     text: 'Besides web-development, I love &#127949; rides, listening to &#127925; and playing &#127918; games!',
-    label: 'ok! show less',
+    label: 'ok! show less (4/4)',
     skills: [
       { name: 'Bike Riding', value: 75 },
       { name: 'Gaming', value: 60 }
