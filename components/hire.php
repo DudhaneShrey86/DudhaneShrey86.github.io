@@ -2,7 +2,7 @@
   <div id="hire-card" class="animate">
     <div id="hire-side">
       <h3 class="section-header">Hire Me</h3>
-      <p>I have a good feeling about web-development and I am currently looking for a front-end role where I can learn and contribute more.</p>
+      <p>I have a good feeling about web-development and I am currently looking for a full-stack role where I can learn and contribute more.</p>
       <div id="hire-actions-container">
         <a href="./assets/resume.pdf" target="_blank" class="btn"><i class="mdi mdi-download"></i>DOWNLOAD RESUME</a>
         <span>

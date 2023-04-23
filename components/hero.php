@@ -10,7 +10,7 @@
     </div>
     <div id="info-container">
       <h1>Hello, I'm Shreyanshu Dudhane</h1>
-      <h3>A <span class="web-position">Front-end Developer</span> & <span class="web-position">Web Enthusiast</span></h3>
+      <h3>A <span class="web-position">Full-Stack Developer</span> & <span class="web-position">Web Enthusiast</span></h3>
       <button class="btn full-width" onclick="goTo('a')">EXPLORE<i class="mdi mdi-chevron-right"></i></button>
     </div>
   </div>

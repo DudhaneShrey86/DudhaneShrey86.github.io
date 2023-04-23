@@ -40,6 +40,7 @@ let aboutTexts = [
       { name: 'CSS', value: 90 },
       { name: 'Vue.js', value: 75 },
       { name: 'JQuery', value: 60 },
+      { name: 'React JS', value: 30 },
       { name: 'Figma', value: 50 }
     ]
   },
@@ -47,10 +48,10 @@ let aboutTexts = [
     text: 'I am fascinated by the powers of web-development and I want to explore all the aspects of it.',
     label: 'uh huh? (2/4)',
     skills: [
-      { name: 'PHP', value: 50 },
-      { name: 'Laravel', value: 60 },
-      { name: 'Golang', value: 20 },
-      { name: 'MySQL', value: 50 }
+      { name: 'Golang', value: 50 },
+      { name: 'Laravel', value: 40 },
+      { name: 'MySQL', value: 75 },
+      { name: 'MongoDB', value: 50 },
     ]
   },
   {
