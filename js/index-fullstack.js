@@ -41,14 +41,14 @@ let aboutTexts = [
       { name: 'Vue.js', value: 75 },
       { name: 'JQuery', value: 60 },
       { name: 'React JS', value: 40 },
-      { name: 'Figma', value: 50 }
+      { name: 'Figma', value: 40 }
     ]
   },
   {
     text: 'I am fascinated by the powers of web-development and I want to explore all the aspects of it.',
     label: 'uh huh? (2/4)',
     skills: [
-      { name: 'Golang', value: 50 },
+      { name: 'Golang', value: 60 },
       { name: 'Laravel', value: 30 },
       { name: 'MySQL', value: 75 },
       { name: 'MongoDB', value: 50 },
@@ -82,9 +82,9 @@ let projectsArray = [
     text: 'A complete web platform for "Insurance Solutions" policy agency and its customers to digitize their business.',
     link: 'https://insurancesolns.com/',
     images: [
-      './assets/images/is/is.webp',
-      './assets/images/is/explore.webp',
-      './assets/images/is/policies.webp'
+      '../assets/images/is/is.webp',
+      '../assets/images/is/explore.webp',
+      '../assets/images/is/policies.webp'
     ]
   },
   {
@@ -92,10 +92,10 @@ let projectsArray = [
     text: 'A web-application to help a trust organization interact with the needy and manage daily data.',
     link: '',
     images: [
-      './assets/images/tms/tms.webp',
-      './assets/images/tms/applications.webp',
-      './assets/images/tms/receipt.webp',
-      './assets/images/tms/status.webp',
+      '../assets/images/tms/tms.webp',
+      '../assets/images/tms/applications.webp',
+      '../assets/images/tms/receipt.webp',
+      '../assets/images/tms/status.webp',
     ]
   },
   {
@@ -103,10 +103,10 @@ let projectsArray = [
     text: 'A little games website which attempted to make the "lockdown" period a little less boring.',
     link: 'https://avidgames.site/',
     images: [
-      './assets/images/avid/avid.webp',
-      './assets/images/avid/homepage.webp',
-      './assets/images/avid/bird.webp',
-      './assets/images/avid/puzzle.webp',
+      '../assets/images/avid/avid.webp',
+      '../assets/images/avid/homepage.webp',
+      '../assets/images/avid/bird.webp',
+      '../assets/images/avid/puzzle.webp',
     ]
   },
 ]
