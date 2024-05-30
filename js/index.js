@@ -38,9 +38,10 @@ let aboutTexts = [
       { name: 'JS', value: 80 },
       { name: 'HTML', value: 90 },
       { name: 'CSS', value: 90 },
+      { name: 'React.js', value: 75 },
       { name: 'Vue.js', value: 75 },
       { name: 'JQuery', value: 60 },
-      { name: 'React JS', value: 40 },
+      { name: 'TypeScript', value: 50 },
       { name: 'Figma', value: 50 }
     ]
   },
@@ -49,9 +50,10 @@ let aboutTexts = [
     label: 'uh huh? (2/4)',
     skills: [
       { name: 'Golang', value: 50 },
+      { name: 'Node.js', value: 30 },
       { name: 'Laravel', value: 30 },
-      { name: 'MySQL', value: 75 },
-      { name: 'MongoDB', value: 50 },
+      { name: 'MongoDB', value: 75 },
+      { name: 'MySQL', value: 60 },
     ]
   },
   {
@@ -59,7 +61,7 @@ let aboutTexts = [
     label: 'anything else? (3/4)',
     skills: [
       { name: 'Creativity', value: 30 },
-      { name: 'Logic', value: 60 },
+      { name: 'Logic', value: 70 },
       { name: 'Laziness', value: 50 }
     ]
   },
